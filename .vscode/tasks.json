@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "group": "build",
+            "command": "make",
+            "problemMatcher": []
+        },
+        {
+            "label": "Write firmware",
+            "type": "shell",
+            "group": "build",
+            "command": "make prog",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "group": "build",
+            "command": "make clean",
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}

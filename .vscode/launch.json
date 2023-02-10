@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    
+    "configurations": [
+        {
+            "name": "OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "cwd": "${workspaceRoot}",
+            "servertype": "openocd",
+            "executable": "build/Test_PWM.elf",
+            // "svdFile": "STM32F429.svd",
+			"configFiles": [
+				"interface/stlink-v2.cfg",
+				"target/stm32f1x.cfg"
+			],
+            "preLaunchTask": "Build"
+        }
+    ]
+}
